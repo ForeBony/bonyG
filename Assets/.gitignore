@@ -1,0 +1,23 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Mm]emoryCaptures/
+
+# Logs
+*.log
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.vcxproj
+
+# Large files
+*.fbx
+*.psd
+*.tiff
+*.mp4
+*.avi
