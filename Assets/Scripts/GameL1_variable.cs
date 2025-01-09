@@ -7,5 +7,5 @@ using UnityEngine;
 public class GameL1_variable: MonoBehaviour
 {
     public int coin=500;
-    private int level=3;
+    private int level=13;
 }
