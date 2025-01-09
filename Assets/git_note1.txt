@@ -8,3 +8,5 @@ git push
 git add .：將所有更改文件加入暫存區。
 git commit -m "Update GameL2_dataType.cs with new values"：將暫存區的更改提交到本地倉庫，並附加提交訊息。
 git push：將本地倉庫的提交推送到遠程倉庫。
+
+git status
