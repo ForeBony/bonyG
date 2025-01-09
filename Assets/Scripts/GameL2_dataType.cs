@@ -9,8 +9,10 @@ public class GameL2_dataType : MonoBehaviour
     public float moveSpeed = 3.5f;
     public float turnSpeed = 30.7f;
     public string character = "Gern";
+    public char cHaR = 'a';
     public bool isDead = false;
     public bool gameOver = true;
-    public byte lv = 16;
-    public uint coin = 9999;
+    public byte lv = 255; //byte  0~255, 8 byte
+    public uint coin = 9999; //  32 byte
+    public sbyte sB = -128;
 }
