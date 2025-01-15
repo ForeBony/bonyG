@@ -76,7 +76,25 @@ public class GameL3_Operators:MonoBehaviour
         Debug.Log(numberC != numberD);
         Debug.Log(numberC == numberD);
         
-
+        // 布林值
+        //邏輯否定
+        Debug.Log("<color=#ffaa00>-----邏輯否定-----</color>");
+        Debug.Log(!true);  // False
+        Debug.Log(!false); //True
+        bool boolVarTrue = true, boolVarFalse = false; 
+        Debug.Log(!boolVarTrue); //False
+        Debug.Log(!boolVarFalse); //True
+        
+        Debug.Log("<color=#ffaa00>-----and, or, &&, ||-----</color>");
+        Debug.Log(true && true);   //True
+        Debug.Log(true && false);  //False
+        Debug.Log(false && true);  //False
+        Debug.Log(false && false); //False
+        
+        Debug.Log(true || true);   //True
+        Debug.Log(true || false);  //True
+        Debug.Log(false || true);  //True
+        Debug.Log(false || false); //False
 
     }
 }
