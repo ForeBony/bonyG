@@ -45,7 +45,15 @@ public class GameL5_selection_if_else:MonoBehaviour
 
         if (score >= 60)
         {
-            Debug.Log("<color=#0099ff>Score: pass</color>");
+            Debug.Log("<color=#44aaff>Score: pass</color>");
+        }
+        else if (score >= 40)
+        {
+            Debug.Log("<color=#ffaa44>Score: exam again</color>");
+        }
+        else if (score >= 20)
+        {
+            Debug.Log("<color=#8866ff>Score: exam again with a project </color>");
         }
         else
         {
