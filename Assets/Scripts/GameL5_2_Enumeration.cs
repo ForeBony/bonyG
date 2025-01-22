@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 namespace Bony
 {
@@ -62,6 +63,28 @@ public class GameL5_2_Enumeration:MonoBehaviour
     private void Update()
     {
         Debug.Log((int)iTem);
+        //switch +tab * 2 > switch on >enter *2
+        switch (iTem)
+        {
+            case ItEm.None:
+                Debug.Log((int)iTem);
+                break;
+            case ItEm.Coin:
+                Debug.Log("金幣");
+                break;
+            case ItEm.HealthyPotion:
+                Debug.Log("藥水道具");
+                break;
+            case ItEm.ManaPotion:
+                Debug.Log("炸雞");
+                break;
+            case ItEm.Chicken:
+                Debug.Log("這不是道具");
+                break;
+                
+            
+        }
+        
     }
 
 }
