@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Bony
 {
     
-}
+
 /// <summary>
 /// Selection Statement
 /// 1. if
@@ -19,8 +19,8 @@ public class GameL5_selection_if_else:MonoBehaviour
     private bool isOpen;
     [SerializeField,Header("Score"),Range(0,100)]
     private int score=100;
-    [SerializeField, Header("weapon")] 
-    private string weapon;
+    [SerializeField, Header("weapoN 1")] 
+    private string weapon01;
     [SerializeField, Header("Life"),Range(0,100)] 
     private int LifE;
     
@@ -68,7 +68,7 @@ public class GameL5_selection_if_else:MonoBehaviour
         
         //switch--------------------------
         // switch (value) { }
-        switch (weapon)
+        switch (weapon01)
         {
             //case value;
             //when value ==10 , execute here;
@@ -86,34 +86,35 @@ public class GameL5_selection_if_else:MonoBehaviour
                 break;
         }
         
-        // practice ------------------
-        if (LifE >= 80)
-        {
-            Debug.Log("<color=#00ffff>Life : Safe now</color>");
-        }
-        else if (LifE >= 60)
-        {
-            Debug.Log("<color=#00ff66>Life : becareful</color>");
-        }
-        else if (LifE >= 40)
-        {
-            Debug.Log("<color=#8866ff>Life : Need Life Potion now</color>");
-        }
-        else if (LifE >= 10)
-        {
-            Debug.Log("<color=#ffaa55>Life : almost die </color>");
-        }
-        else if (LifE == 0)
-        {
-            Debug.Log("<color=#ff6666>Life : press ESC restart </color>");
-        }
-        else
-        {
-            Debug.Log("<color=#ff0000>game not end??</color>");
-        }
+            // practice ------------------
+            if (LifE >= 80)
+            {
+                Debug.Log("<color=#00ffff>Life : Safe now</color>");
+            }
+            else if (LifE >= 60)
+            {
+                Debug.Log("<color=#00ff66>Life : becareful</color>");
+            }
+            else if (LifE >= 40)
+            {
+                Debug.Log("<color=#8866ff>Life : Need Life Potion now</color>");
+            }
+            else if (LifE >= 10)
+            {
+                Debug.Log("<color=#ffaa55>Life : almost die </color>");
+            }
+            else if (LifE == 0)
+            {
+                Debug.Log("<color=#ff6666>Life : press ESC restart </color>");
+            }
+            else
+            {
+                Debug.Log("<color=#ff0000>game not end??</color>");
+            }
         
         
         
         
     }
+}
 }
