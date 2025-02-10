@@ -55,6 +55,11 @@ public class GameL6_2_array : MonoBehaviour
             }
         }
     };
+    
+    //不規則陣列 定義陣列
+    private int[][] numbers=new int[2][];
+    private int[][,] count =new int[2][,];
+    
 
     private void Start()
     {
@@ -87,6 +92,21 @@ public class GameL6_2_array : MonoBehaviour
         // 陣列名稱.Rank
         Debug.Log($"<color=#aa66ff>length deck2.Rank===> {deck2.Rank}</color>");
         Debug.Log($"<color=#aa66ff>length shop.Rank===> {shop.Rank}</color>");
+        
+        //不規則陣列 陣列內容
+        numbers[0] = new int[] {1,3,5};
+        numbers[1] = new int[] {9,8};
+        //取得數字3和9
+        Debug.Log($"<color=#3ff>不規則陣列的數字3: {numbers[0][1]}</color>");
+        Debug.Log($"<color=#3ff>不規則陣列的數字9: {numbers[1][0]}</color>");
+        //將8改成6
+        numbers[1][1] = 6;
+        Debug.Log($"<color=#3ff>第二列第二個: {numbers[1][1]}</color>");
+        
+        // 不規則陣列 包含多維陣列
+        count[0] = new int[,] { { 1, 1 }, { 1, 1 } };
+        count[1] = new int[,] { { 2, 2 ,2}, { 2, 2 ,2 } };
+        Debug.Log($"<color=#3ff>count 第二列 [0,0]{count[1][0,0]}</color>");
 
 
     }
